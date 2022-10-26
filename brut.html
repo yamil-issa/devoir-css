@@ -5,6 +5,9 @@
 	<title>Devoir à la maison</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -57,31 +60,34 @@
 			</ul>
 		</nav>
 		
-		<ul>
+		<ul class="navbar-footer">
 			<li><a href="https://mon.service-public.fr/portail/">Accueil</a></li>
 			<li>&nbsp;&gt;&nbsp;Mon tableau de bord</li>
 		</ul>
 
 		<section>
 			<main>
+				<!-- ajout d'une div-->
+			  <div class="main-title">	
 				<h1>Mon tableau de bord</h1>
-				<div>Découvrez ci-dessous ce que vous pouvez faire dans la rubrique « Mon tableau de bord ».</div>
-				<div>
-					<div>
+			  </div>
+				<div class="main-subtitle"><p>Découvrez ci-dessous ce que vous pouvez faire dans la rubrique « Mon tableau de bord ».</p></div>
+				<div class="main-first-section">
+					<div class="main-first-section-content">
 						<a href="jsp/mes_liaisons.jsp"><img src="img/402_429_Liaisons.JPG" width="60" height="60">Mes liaisons de comptes</a>
 						<ul>
 							<li>Accédez d'un clic à vos comptes administratifs sans ressaisir vos identifiants et mots de passe.</li>
 							<li>Gérez vos liaisons de comptes.</li>
 						</ul>
 					</div>
-					<div>
+					<div class="main-first-section-content">
 						<a href="jsp/mon_calendrier.jsp"><img src="img/605_403_418_picto_agenda.gif" width="60" height="60">Mon calendrier </a>
 						<ul>
 							<li>Notez et visualisez toutes vos échéances administratives.</li>
 							<li>Recevez des alertes par courriel pour vos rappels  d'échéances.</li>
 						</ul>
 					</div>
-					<div> 
+					<div class="main-first-section-content"> 
 						<a href="jsp/mon_suivi.jsp"><img src="img/401_430_suivi.jpg" width="60" height="60">Mon suivi </a>
 						<ul>
 							<li>Suivez l'avancement de vos démarches en ligne.</li>
@@ -92,15 +98,15 @@
 			</main>
 
 			<aside>
-				<div>
-					<h3>LES ASTUCES</h3>
+				<div class="aside-first-section">
+					<div class="aside-title"><h3>LES ASTUCES</h3></div>
 					<ul>
 						<li><a href="jsp/authent/page_detail_astuce_MSP.jsp?idAstuce=1001" target="_self" title="Lien vers Accédez depuis mon.service-public.fr à une nouvelle génération de démarches en ligne">Accédez depuis mon.service-public.fr à une nouvelle génération de démarches en ligne</a></li>
 					</ul>
 					<div><a href="jsp/authent/toutes_astuces_msp.jsp">Toutes les astuces</a></div>
 				</div>
-				<div>
-					<h3>Les actualités</h3>
+				<div class="aside-second-section">
+					<div class="aside-second-title"><h3>Les actualités</h3></div>
 					<ul>
 						<li><a href="jsp/authent/page_detail_actualite_MSP.jsp?idActu=11644" title="Lien vers Votre avis nous intéresse…"><span class="date">22/10/2012</span> Que pensez-vous de MSP ?</a></li>
 						<li><a href="jsp/authent/page_detail_actualite_MSP.jsp?idActu=11823" title="Lien vers Une nouvelle démarche dans le Tarn"><span class="date">10/10/2012</span> Le Conseil général du Tarn vient de déployer, une nouvelle téléprocédure .</a></li>

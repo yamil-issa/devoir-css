@@ -5,18 +5,35 @@
 body {
     margin-left: 2rem;
     margin-right: 2rem;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+body a {
+    text-decoration: none;
 }
 
 header {
     display: flex;
     align-items: center;
-    gap: 53rem;
+    gap: 47.4rem;
     background: -webkit-rgb(246, 248, 251);
     background: -o-rgb(246, 248, 251);
     background: -ms-rgb(246, 248, 251);
     background: -moz-rgb(246, 248, 251);
     background: rgb(246, 248, 251);
+    padding-bottom: 1rem;
     
+}
+#recherche_conteneur {
+    width: 30%;
+}
+#recherche_conteneur>form {
+    display: flex;
+    gap: 0.90rem;
+    width: 100%;
+}
+#rechercheInput {
+    width: 15rem;
 }
 nav {
     background: -webkit-rgb(246, 248, 251);
@@ -26,7 +43,11 @@ nav {
     background: rgb(246, 248, 251);
 }
 /* navbar*/
-
+nav>ul {
+    width: 100%;
+    position: relative;
+    right: 2.5rem;
+}
 nav ul {
     list-style: none;
     display: flex;
@@ -35,8 +56,9 @@ nav ul {
 
 }
 
+
 nav li {
-    font-size: 25px;
+    font-size: 18px;
     background: -webkit-linear-gradient(top, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
     background: -o-linear-gradient(top, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
     background: -ms-linear-gradient(top, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
@@ -46,11 +68,9 @@ nav li {
     height: 3rem;
     text-align: center;
     border-bottom: 2px solid rgb(4, 118, 167);
-}
-.nav a {
-    text-decoration: none;
     
 }
+
 
 .navbar-first-element>ul {
   display: none;
@@ -66,4 +86,144 @@ nav li {
 
 .navbar-fourth-element>ul {
     display: none;
+}
+
+.navbar-footer{
+    margin-top: 1.5rem;
+    list-style: none;
+    display: flex;
+    position: relative;
+    right: 2.5rem;
+    margin-bottom: 1.5rem;
+    
+}
+
+/* hero section */
+section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+section li {
+    list-style: none;
+}
+section main {
+    width: 70%;
+    background: -webkit-linear-gradient(top, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
+    background: -o-linear-gradient(top, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
+    background: -ms-linear-gradient(top, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
+    background: -moz-linear-gradient(top, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
+    background: linear-gradient(to bottom, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
+    border-radius: 1rem;
+    height: 23rem;
+
+}
+
+.main-title {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    background-color: rgb(12,92,148);
+}
+
+.main-subtitle {
+    margin-bottom: 1rem;
+    background-color: #fff;
+    height: 2rem;
+}
+
+.main-title h1 {
+    color: #fff;
+    margin-left: 3rem;
+    text-transform: uppercase;
+}
+
+.main-first-section {
+    display: flex;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.main-first-section-content {
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+   align-items: flex-start;
+
+}
+.main-first-section-content img {
+    margin-left: 2.5rem;
+
+}
+
+section aside {
+    width: 29.50%;
+
+}
+
+.aside-first-section {
+    background: -webkit-linear-gradient(top, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
+    background: -o-linear-gradient(top, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
+    background: -ms-linear-gradient(top, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
+    background: -moz-linear-gradient(top, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
+    background: linear-gradient(to bottom, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
+    border-radius: 1rem;
+    height: 15rem;
+    margin-bottom: 1rem;
+
+}
+
+.aside-first-section>ul {
+   width: 90%;
+   margin-top: 2rem ;
+   margin-right: 4rem ;
+}
+
+.aside-title {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    background-color: rgb(12,92,148);
+
+}
+
+.aside-title h3 {
+    margin-left: 3rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.aside-second-section {
+    background: -webkit-linear-gradient(top, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
+    background: -o-linear-gradient(top, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
+    background: -ms-linear-gradient(top, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
+    background: -moz-linear-gradient(top, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
+    background: linear-gradient(to bottom, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
+    border-radius: 1rem;
+    height: 15rem;
+}
+
+.aside-second-title {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    background-color: rgb(168, 8, 8);
+}
+
+.aside-second-title h3 {
+    margin-left: 3rem;
+    color: #fff;
+    text-transform: uppercase;
+
+}
+
+/* footer */
+footer {
+    margin-top: 2rem;
+    position:absolute;
+    margin-bottom: 0;
+    background-color: rgb(19, 150, 225);
+    height: 15rem;
+    
+}
+
+footer div ul {
+    display: flex;
 }
