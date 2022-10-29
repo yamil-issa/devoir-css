@@ -3,10 +3,14 @@
 }
 
 .container {
-    margin-left: 2rem;
-    margin-right: 2rem;
+    height: 100%;
+    width: 100%;
     font-family: 'Open Sans', sans-serif;
     
+}
+.sub-container {
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 .container a {
     text-decoration: none;
@@ -56,6 +60,7 @@ nav ul {
 
 }
 
+
 nav ul li {
     font-size: 18px;
     background: -webkit-linear-gradient(top, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
@@ -76,8 +81,9 @@ nav ul li a {
 }
 
 
-.navbar-first-element>ul {
+.navbar-first-element ul {
   display: none;
+  
   
 }
 .navbar-first-element:hover ul {
@@ -86,20 +92,38 @@ nav ul li a {
     display: flex;
     flex-direction: column;
     z-index: 5;
-    width: 90%;
-    right: 6.69rem;
+    left: 0.01rem;
     height: 5rem;
     top: 3.2rem;
+    width: 97%;
     
   }
   .navbar-first-element:hover ul li {
-    border-bottom: none;
-    background-color: #fff;
-
+    border: none;
+    text-align: start;
   }
+
 
 .navbar-second-element>ul {
     display: none;
+}
+.navbar-second-element:hover ul {
+    display: block;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 5;
+    left: 24.4%;
+    height: 5rem;
+    top: 3.2rem;
+    width: 97%;
+    
+  }
+.navbar-second-element:hover ul li {
+    
+    border: none;
+    text-align: start; 
+
 }
 
 .navbar-third-element>ul {
@@ -152,6 +176,13 @@ section main {
     background-color: #fff;
     height: 2rem;
 }
+.main-subtitle p {
+    position: relative;
+    top: 0.3rem;
+    color: rgb(12,92,148);
+    font-weight: bold;
+
+}
 
 .main-title h1 {
     color: #fff;
@@ -195,12 +226,27 @@ section aside {
 
 }
 
-.aside-first-section>ul {
+.aside-first-section ul {
    width: 90%;
-   margin-top: 2rem ;
+   margin-top: 3rem ;
    margin-right: 4rem ;
+   position: relative;
+   right: 1.5rem;
+}
+.aside-first-section ul a {
+    color: black;
 }
 
+.aside-first-section-details {
+    margin-top: 6rem;
+    margin-left: 13rem;
+
+}
+.aside-first-section-details a {
+    color: rgb(12,92,148);
+    font-weight: bold;
+    
+}
 .aside-title {
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
@@ -221,9 +267,23 @@ section aside {
     background: -moz-linear-gradient(top, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
     background: linear-gradient(to bottom, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
     border-radius: 1rem;
-    height: 15rem;
+    height: 20rem;
     display: flex;
     flex-direction: column;
+}
+.aside-second-section ul {
+    margin-top: 2rem;
+    position: relative;
+    right: 1.5rem;
+}
+.aside-second-section li {
+    margin-bottom: 0.2rem;
+
+   
+   
+}
+.aside-second-section li a {
+    color: black;
 }
 
 .aside-second-title {
@@ -239,22 +299,92 @@ section aside {
 
 }
 
+.aside-second-section-details {
+    margin-top: 3rem;
+    margin-left: 12.5rem;
+
+}
+.aside-second-section-details a {
+    color: rgb(168, 8, 8);
+    font-weight: bold;
+    
+}
+
+.date {
+    font-weight: bold;
+    color: rgb(168, 8, 8);
+}
+
 /* footer */
 footer {
+    position: relative;
+    top: 100%;
     margin-top: 2rem;
-    display: flex;
     background-color: rgb(19, 150, 225);
-    width:100%;
-    height: 15rem;
+    height: 18rem;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
   
 }
 
 footer div ul {
+    position: relative;
+    top: 1rem;
     display: flex;
+    gap: 1rem;
 }
 
-.footer-bottom {
-    
+footer div>ul>li {
+    list-style: none;
 }
+.footer-list {
+    display: flex;
+    flex-direction: column;
+}
+.footer-sub-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 0.5px;
+    font-size: 13px;
+    
+
+}
+
+.footer-sub-list li::before {
+      position: relative;
+      top: 0.4rem;
+      margin-right: 0.7rem;
+      content: "•";
+      color: rgb(117, 181, 236);
+      font-size: 35px;
+      font-weight: bold;
+}
+.footer-list p {
+    margin-left: 2.4rem;
+    font-weight: bold;
+    color: #fff;
+}
+.footer-list a {
+    color: #fff;
+}
+.footer-bottom {
+    position: absolute;
+    top: 87%;
+    width: 100%;
+    height: 2.5rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background-color: rgb(4, 4, 108);
+}
+
+.footer-bottom a {
+    position: relative;
+    font-size: 12px;
+    top: 0.5rem;
+    left: 27%;
+    color: #fff;
+}
+
