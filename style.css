@@ -15,15 +15,10 @@
 .container a {
     text-decoration: none;
 }
-.material-symbols-outlined {
-    display: none;
-    
-}
 
 header {
     display: flex;
     align-items: center;
-    gap: 47.4rem;
     background: -webkit-rgb(246, 248, 251);
     background: -o-rgb(246, 248, 251);
     background: -ms-rgb(246, 248, 251);
@@ -32,10 +27,17 @@ header {
     padding-bottom: 1rem;
     
 }
+header>div {
+    width: 100%;
+
+}
+header>div img {
+    width: 480px;
+    height: 80px;
+}
 #recherche_conteneur {
     width: 30%;
-    position: relative;
-    right: 11.5rem;
+    margin-right: 0.3rem;
     
 }
 #recherche_conteneur>form {
@@ -55,20 +57,19 @@ nav {
     background: rgb(246, 248, 251);
 }
 /* navbar*/
-nav ul {
+.menu-links {
+    width: 102.60%;
+    position: relative;
+    right: 2rem;
     list-style: none;
     display: flex;
     justify-content: center;
-    position: relative;
-    right: 1.2rem;
-    width: 102.7%;
     
-
+    
 }
 
 
-nav ul .col {
-    font-size: 18px;
+.menu-links .menu-item {
     background: -webkit-linear-gradient(top, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
     background: -o-linear-gradient(top, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
     background: -ms-linear-gradient(top, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
@@ -79,27 +80,30 @@ nav ul .col {
     text-align: center;
     border-bottom: 2px solid rgb(4, 118, 167);
     margin-right: 0.1rem;
-    
+   
 }
-nav ul .col a {
+
+.menu-links .menu-item a {
+    font-size: 17px;
     position: relative;
     color: rgb(7, 91, 218);
-    top: 25%
+    top: 25%;
+
 }
 
-
-.col ul {
+.menu-item ul {
   display: none;
-  
-  
 }
-.col:hover .menu1 {
+
+.menu-item:hover .menu1 {
     display: block;
+    list-style: none;
     position: absolute;
     display: flex;
+    gap: 0.2rem;
     flex-direction: column;
     z-index: 5;
-    height: 6rem;
+    height: fit-content;
     top: 3.1rem;
     left: 2rem;
     width: 24.3%;
@@ -110,19 +114,21 @@ nav ul .col a {
     background: linear-gradient(to bottom, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
     
   }
-.col:hover .menu1 li {
+.menu-item:hover .menu1 li {
     border: none;
     text-align: start;
     
   }
  
-  .col:hover .menu2 {
+  .menu-item:hover .menu2 {
     display: block;
+    list-style: none;
     position: absolute;
     display: flex;
+    gap: 0.2rem;
     flex-direction: column;
     z-index: 5;
-    height: 6rem;
+    height: fit-content;
     top: 3.1rem;
     left: 21.7rem;
     width: 24.3%;
@@ -133,19 +139,21 @@ nav ul .col a {
     background: linear-gradient(to bottom, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
     
   }
-.col:hover .menu2 li {
+.menu-item:hover .menu2 li {
     border: none;
     text-align: start;
     
   }
 
-  .col:hover .menu3 {
+  .menu-item:hover .menu3 {
     display: block;
+    list-style: none;
     position: absolute;
     display: flex;
+    gap: 0.2rem;
     flex-direction: column;
     z-index: 5;
-    height: 6rem;
+    height: fit-content;
     top: 3.1rem;
     left: 41.6rem;
     width: 24.3%;
@@ -156,19 +164,21 @@ nav ul .col a {
     background: linear-gradient(to bottom, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
     
   }
-.col:hover .menu3 li {
+.menu-item:hover .menu3 li {
     border: none;
     text-align: start;
     
   }
 
-  .col:hover .menu4 {
+  .menu-item:hover .menu4 {
     display: block;
+    list-style: none;
     position: absolute;
     display: flex;
+    gap: 0.2rem;
     flex-direction: column;
     z-index: 5;
-    height: 11rem;
+    height: fit-content;
     top: 3.1rem;
     left: 61.3rem;
     width: 24.3%;
@@ -179,7 +189,7 @@ nav ul .col a {
     background: linear-gradient(to bottom, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
     
   }
-.col:hover .menu4 li {
+.menu-item:hover .menu4 li {
     border: none;
     text-align: start;
     
@@ -208,7 +218,8 @@ section main {
     background: -moz-linear-gradient(top, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
     background: linear-gradient(to bottom, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
     border-radius: 1rem;
-    height: 23rem;
+    height:fit-content;
+    padding-bottom: 6rem;
     margin-bottom: 2rem;
 
 }
@@ -219,7 +230,7 @@ section main {
     background-color: rgb(12,92,148);
     position: relative;
     right: 0.7rem;
-    width: 103%;
+    width: 102.9%;
     height: 2rem;
 }
 .main-title h1 {
@@ -234,8 +245,8 @@ section main {
     background-color: #fff;
     height: 2rem;
     position: relative;
-    right: 0.8rem;
-    width: 103%;
+    right: 0.9rem;
+    width: 103.5%;
     
 }
 .main-subtitle p {
@@ -286,7 +297,7 @@ section main {
     background: -moz-linear-gradient(top, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
     background: linear-gradient(to bottom, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
     border-radius: 1rem;
-    height: 15.5rem;
+    height:fit-content;
     margin-bottom: 1rem;
 
 }
@@ -334,7 +345,7 @@ section main {
     background: -moz-linear-gradient(top, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
     background: linear-gradient(to bottom, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
     border-radius: 1rem;
-    height: 21rem;
+    height:fit-content;
     display: flex;
     flex-direction: column;
 }
@@ -390,7 +401,7 @@ footer {
     top: 100%;
     margin-top: 2rem;
     background-color: rgb(19, 150, 225);
-    height: 18rem;
+    height: 20rem;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
     margin-left: 1rem;
@@ -411,6 +422,7 @@ footer div>ul>li {
 .footer-list {
     display: flex;
     flex-direction: column;
+    
 }
 .footer-sub-list {
     display: flex;
@@ -418,6 +430,9 @@ footer div>ul>li {
     list-style: none;
     gap: 0.5px;
     font-size: 13px;
+    position: relative;
+    left: 0.3rem;
+
     
 
 }
@@ -428,7 +443,7 @@ footer div>ul>li {
       margin-right: 0.7rem;
       content: "•";
       color: rgb(117, 181, 236);
-      font-size: 35px;
+      font-size: 25px;
       font-weight: bold;
 }
 .footer-list p {
@@ -458,38 +473,143 @@ footer div>ul>li {
 }
 
 /* responsive*/
-@media screen and (max-width: 820px) {
-    .material-symbols-outlined {
-        display: block;
-        position: relative;
-        top: 2rem;
-        left: 23rem;
+@media screen and (max-width: 1000px) {
+    /*navbar */
+    nav {
+        padding-bottom: 1.5rem;
+    }
+    .navbar__toggle {
         cursor: pointer;
     }
+    .navbar__toggle .bar {
+        display: block;
+        position: relative;
+        left: 10.7rem;
+        top: 2rem;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background: #000;
+    }
+    #mobile-menu.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    #mobile-menu.is-active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
    
-    nav ul {
+    #recherche_conteneur {
+        position: relative;
+        top: 3.5rem;
+        right: 22rem;
+        width: 100%;
+    }
+    #rechercheInput {
+        width: 20rem;
+    }
+    header>div img {
+        width: 365px;
+        height: 73px;
+    }
+    .menu-links {
+        display: none;
+    }
+    .menu-links.active {
         display: flex;
+        position: relative;
+        top: 1.5rem;
+        z-index: 15;
+        gap: 0;
         flex-direction: column;
-        width: 100%
-        
+        width: 100;
+        height: fit-content;
         
     }
+    .menu-links .menu-item {
+        border-bottom: 2px solid rgb(4, 118, 167);
+        width: 105.70%;
+    }
+
+    .menu-item:hover .menu1 {
+        height: 10rem;
+        top: 3.1rem;
+        left: 2rem;
+        width: 97%;
+        background: -webkit-linear-gradient(top, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
+        background: -o-linear-gradient(top, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
+        background: -ms-linear-gradient(top, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
+        background: -moz-linear-gradient(top, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
+        background: linear-gradient(to bottom, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
+        
+      }
+      .menu-item:hover .menu2 {
+        
+        height: 10rem;
+        top: 6rem;
+        left: 2rem;
+        width: 97%;
+        background: -webkit-linear-gradient(top, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
+        background: -o-linear-gradient(top, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
+        background: -ms-linear-gradient(top, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
+        background: -moz-linear-gradient(top, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
+        background: linear-gradient(to bottom, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
+        
+      }
+    
+      .menu-item:hover .menu3 {
+        
+        height: 10rem;
+        top: 9rem;
+        left: 2rem;
+        width: 97%;
+        background: -webkit-linear-gradient(top, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
+        background: -o-linear-gradient(top, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
+        background: -ms-linear-gradient(top, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
+        background: -moz-linear-gradient(top, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
+        background: linear-gradient(to bottom, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
+        
+      }
+    
+      .menu-item:hover .menu4 {
+        height: 10rem;
+        left: 2rem;
+        width: 97%;
+        top: 12rem;
+        background: -webkit-linear-gradient(top, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
+        background: -o-linear-gradient(top, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
+        background: -ms-linear-gradient(top, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
+        background: -moz-linear-gradient(top, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
+        background: linear-gradient(to bottom, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
+        
+      }
+      .navbar-footer {
+        top: 1rem;
+        left: 15%;
+
+      }
+    /* hero section */
 
     section main {
         height: 20%;
     }
     .main-first-section {
-        margin-left: 25%;
+        
     }
     .main-title {
-        width: 106.9%;
+        width: 106%;
     }
     .main-subtitle {
-        width: 106.9%;
-        height: fit-content;
-        padding-bottom: 0.5rem;
+        width: 107%;
+        padding-bottom: 3rem;
     }
     .main-subtitle p {
+
         
     }
 
@@ -501,16 +621,17 @@ footer div>ul>li {
         height: 48%;
     }
     footer {
-        height: 100%;
+        height: 60rem;
         margin-top: 4rem;
     }
 
     footer div ul {
         display: flex;
         flex-direction: column;
+        gap: 2rem;
     }
     .footer-bottom {
-        top: 98%;
+        top: 57rem;
         height: fit-content;
     }
     .footer-bottom a {
