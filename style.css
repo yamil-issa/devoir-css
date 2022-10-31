@@ -9,8 +9,8 @@
     
 }
 .sub-container {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .container a {
     text-decoration: none;
@@ -64,8 +64,6 @@ nav {
     list-style: none;
     display: flex;
     justify-content: center;
-    
-    
 }
 
 
@@ -130,7 +128,7 @@ nav {
     z-index: 5;
     height: fit-content;
     top: 3.1rem;
-    left: 21.7rem;
+    left: 21.9rem;
     width: 24.3%;
     background: -webkit-linear-gradient(top, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
     background: -o-linear-gradient(top, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
@@ -155,7 +153,7 @@ nav {
     z-index: 5;
     height: fit-content;
     top: 3.1rem;
-    left: 41.6rem;
+    left: 41.9rem;
     width: 24.3%;
     background: -webkit-linear-gradient(top, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
     background: -o-linear-gradient(top, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
@@ -180,7 +178,7 @@ nav {
     z-index: 5;
     height: fit-content;
     top: 3.1rem;
-    left: 61.3rem;
+    left: 61.8rem;
     width: 24.3%;
     background: -webkit-linear-gradient(top, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
     background: -o-linear-gradient(top, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
@@ -254,6 +252,7 @@ section main {
     top: 0.3rem;
     color: rgb(52, 108, 148);
     margin-left: 0.3rem;
+    font-weight: bold;
 
 }
 
@@ -280,12 +279,30 @@ section main {
    align-items: flex-start;
    justify-content: center;
    
+}
 
+.main-first-section-content:nth-child(1) {
+    width: 40%;
+}
+.main-first-section-content:nth-child(2) {
+    width: 46%;
+}
+.main-first-section-content:nth-child(3) {
+  position: relative;
+  width: 30%;
+}
+
+
+.main-first-section-content ul li {
+    margin-bottom: 0.4rem;
+}
+.main-first-section a{
+    color: rgb(62, 138, 238);
+    font-weight: bold;
 
 }
 .main-first-section-content img {
     margin-left: 2.2rem;
-
 }
 
 
@@ -404,8 +421,8 @@ footer {
     height: 20rem;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 10px;
+    margin-right: 10px;
   
 }
 
@@ -540,7 +557,7 @@ footer div>ul>li {
         height: 10rem;
         top: 3.1rem;
         left: 2rem;
-        width: 97%;
+        width: 97.5%;
         background: -webkit-linear-gradient(top, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
         background: -o-linear-gradient(top, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
         background: -ms-linear-gradient(top, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
@@ -553,7 +570,7 @@ footer div>ul>li {
         height: 10rem;
         top: 6rem;
         left: 2rem;
-        width: 97%;
+        width: 97.5%;
         background: -webkit-linear-gradient(top, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
         background: -o-linear-gradient(top, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
         background: -ms-linear-gradient(top, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
@@ -567,7 +584,7 @@ footer div>ul>li {
         height: 10rem;
         top: 9rem;
         left: 2rem;
-        width: 97%;
+        width: 97.5%;
         background: -webkit-linear-gradient(top, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
         background: -o-linear-gradient(top, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
         background: -ms-linear-gradient(top, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
@@ -579,7 +596,7 @@ footer div>ul>li {
       .menu-item:hover .menu4 {
         height: 10rem;
         left: 2rem;
-        width: 97%;
+        width: 97.5%;
         top: 12rem;
         background: -webkit-linear-gradient(top, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
         background: -o-linear-gradient(top, rgb(195, 215, 226) 0%, rgb(245, 246, 248) 21%);
@@ -606,17 +623,24 @@ footer div>ul>li {
     }
     .main-subtitle {
         width: 107%;
-        padding-bottom: 3rem;
+        padding-bottom: 4rem;
     }
-    .main-subtitle p {
-
-        
-    }
+    
 
     .main-first-section {
         display: flex;
         flex-direction: column;
     }
+    .main-first-section-content:nth-child(1) {
+        width: 100%;
+    }
+    .main-first-section-content:nth-child(2) {
+        width: 100%;
+    }
+    .main-first-section-content:nth-child(3) {
+      width: 100%;
+    }
+    
     .aside-first-section {
         height: 48%;
     }
