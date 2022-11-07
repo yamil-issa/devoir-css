@@ -401,7 +401,7 @@ footer div>ul>li {
     .navbar__toggle .bar {
         display: block;
         position: relative;
-        left: 45%;
+        left: 47.6%;
         width: 25px;
         height: 3px;
         margin: 5px auto;
@@ -416,6 +416,8 @@ footer div>ul>li {
     #mobile-menu.is-active .bar:nth-child(2) {
         opacity: 0;
     }
+
+    
 
     #mobile-menu.is-active .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
@@ -486,6 +488,10 @@ footer div>ul>li {
         width: 100%;
         padding-bottom: 4rem;
     }
+    main .col-md-4:nth-child(3) {
+        padding-left: 0.5rem;
+}
+
     
 
     .main-first-section {
@@ -505,6 +511,15 @@ footer div>ul>li {
     .aside-first-section {
         height: 48%;
     }
+    aside {
+        margin-bottom: 1rem;
+    }
+
+    .aside-second-section-details  {
+        margin-bottom: 3rem;
+    }
+
+    /* footer */
     footer {
         height: 60rem;
         margin-top: 4rem;
