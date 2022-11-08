@@ -1,7 +1,14 @@
-# devoir-css
+# Devoir-css
+code source du site : https://mon-service-public-test.herokuapp.com
 ## Méthode de pagination
-L'utilisation du grid layout ne m'a pas semblé necessaire au vu du nombre d'élèments et le flebox était amplement suffisant 
-Je l'ai utilisé pour disposer le menu et le footer
-La partie "section" a ete paginé à l'aide de la grille du Framework Bootstrap 
+Pour structurer les differents élèments j'ai principalement utilisé la methode flexbox. L'utilisation du grid layout ne m'a pas semblé necessaire au vu du nombre d'élèments et le flebox m'as semblé etre une bonne option et j'ai éstimé que je pourrais arrriver au resultat attendu avec la cette méthode. J'ai donc utilisé flexbox pour disposer la partie header, la partie nav et le footer
+La partie section elle a éte paginé à l'aide de la grille du Framework Bootstrap.
+## Responsive 
+Pour le responsive j'ai utilisé des media queries. Bootstrap gére egalement une partie de la responsive.
 
-## Résultat 
+## Grille bootstrap
+dans la partie section j'ai utilisé la classe "col-lg" de bootstrap afin de disposer ses elements fille que sont main et aside. Les élèments du main ont été diposé avec la classe "col-md". L'utilisation de la grille de boostrap s'est averé assez pratique pour le responsive vu que les élèment se resisaient d'eux-mêmes en fonction de la taille de l'écran.
+## Extra
+Pour le responsive j'ai mis un menu hamburger, les élèments du menu s'affichent lorsque l'on clique dessus
+## Rendu
+Le resultat final correspond assez bien à la maquette.
