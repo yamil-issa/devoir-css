@@ -6,7 +6,7 @@ Pour structurer les differents élèments j'ai principalement utilisé la method
 Pour le responsive j'ai utilisé des media queries. Bootstrap gére egalement une partie de la responsive.
 
 ## Grille bootstrap
-dans la partie section j'ai utilisé la classe "col-lg" de bootstrap afin de disposer ses elements fille que sont main et aside. Les élèments du main ont été diposé avec la classe "col-md". L'utilisation de la grille de boostrap s'est averé assez pratique pour le responsive vu que les élèment se resisaient d'eux-mêmes en fonction de la taille de l'écran.
+dans la partie section j'ai utilisé la classe "col-lg" de bootstrap afin de disposer ses elements filles que sont main et aside. Les élèments du main ont été diposé avec la classe "col-md". L'utilisation de la grille de boostrap s'est averé assez pratique pour le responsive vu que les élèment se resisaient d'eux-mêmes en fonction de la taille de l'écran.
 ## Bonus
 Pour le responsive j'ai rajouté un menu hamburger, les élèments du menu s'affichent lorsque l'on clique dessus
 ## Rendu final
