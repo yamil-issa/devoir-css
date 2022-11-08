@@ -2,6 +2,7 @@
 code source du site : https://mon-service-public-test.herokuapp.com
 ## Méthode de pagination
 Pour structurer les differents élèments j'ai principalement utilisé la methode flexbox. L'utilisation du grid layout ne m'a pas parru necessaire au vu du nombre d'élèments et le flebox m'as semblé etre une bonne option et j'ai éstimé que je pourrais arrriver au resultat attendu avec cette méthode. J'ai donc utilisé flexbox pour disposer la partie header, la partie nav et le footer
+
 La partie section elle a éte paginé à l'aide de la grille du Framework Bootstrap.
 ## Responsive 
 Pour le responsive j'ai utilisé des media queries. Bootstrap gére egalement une partie de la responsive.
