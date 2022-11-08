@@ -24,27 +24,35 @@ header {
     background: -moz-rgb(246, 248, 251);
     background: rgb(246, 248, 251);
     padding-bottom: 1rem;
-    width: 100%;
+    width: auto;
+    overflow: hidden;
+    
     
 }
-header>div {
-    width: 100%;
-
+header>div{
+    width: 70%;
+    margin-right: 0.5rem;
+    flex: 0 0 auto;
 }
+
+header img {
+    width: 47%;
+    margin-right: 0.5rem;
+}
+
 
 #recherche_conteneur {
     width: 30%;
-    margin-right: 0.3rem;
-    
+    margin-right: 0.5rem;
+    flex: 0 0 auto;
+    overflow: hidden;
+   
 }
 #recherche_conteneur>form {
-    display: flex;
-    gap: 0.90rem;
     width: 100%;
+    display: flex;
+    gap: 0.5rem;
     
-}
-#rechercheInput {
-    width: 15rem;
 }
 
 /* navbar*/
@@ -119,9 +127,8 @@ header>div {
     margin-top: 1.5rem;
     list-style: none;
     display: flex;
-    position: relative;
-    right: 2.5rem;
     margin-bottom: 1.5rem;
+    -webkit-padding-start: 0px;
     
 }
 
@@ -390,6 +397,27 @@ footer div>ul>li {
 @media screen and (max-width: 1000px) {
     header {
         padding-bottom: 4rem;
+        flex: 0 0 auto;
+        width: auto;
+        
+    }
+
+    header>div {
+        width: 60%;
+    }
+    #recherche_conteneur {
+    position: relative;   
+    width: auto;
+    right: 50%;
+    flex: 0 0 auto;
+    top: 3.5rem;
+    
+
+    }
+    #recherche_conteneur form {
+        width: 100%;
+        margin-right: 15%;   
+        contain: content;
     }
     /*navbar */
     nav {
@@ -427,17 +455,8 @@ footer div>ul>li {
         transform: translateY(-8px) rotate(-45deg);
     }
    
-    #recherche_conteneur {
-        position: relative;
-        top: 3.5rem;
-        right: 22rem;
-        width: 100%;
-    }
-    #rechercheInput {
-        width: 20rem;
-    }
     header>div img {
-        width: 365px;
+        width: 200px;
         height: 73px;
     }
     .menu-links {
@@ -472,7 +491,8 @@ footer div>ul>li {
     
       .navbar-footer {
         top: 1rem;
-        left: 15%;
+        margin-left: 10%;
+        margin-right: 10%;
 
       }
     /* hero section */
@@ -484,14 +504,20 @@ footer div>ul>li {
     .main-title {
         width: 100%;
     }
+    main .col-md-4 ul {
+        margin-right: 2rem;
+    }
+    main .col-md-4 a {
+        margin-right: 4rem;
+    }
     .main-subtitle {
         width: 100%;
         padding-bottom: 4rem;
     }
     main .col-md-4:nth-child(3) {
         padding-left: 0.5rem;
-}
 
+    }
     
 
     .main-first-section {
@@ -517,6 +543,11 @@ footer div>ul>li {
 
     .aside-second-section-details  {
         margin-bottom: 3rem;
+        margin-right: 3rem;
+    }
+
+    aside a  {
+        margin-right: 3rem;
     }
 
     /* footer */
