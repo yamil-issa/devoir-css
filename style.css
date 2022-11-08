@@ -38,6 +38,7 @@ header>div{
 header img {
     width: 47%;
     margin-right: 0.5rem;
+    object-fit: contain;
 }
 
 
@@ -161,7 +162,7 @@ section main {
     
 }
 .main-title h1 {
-    font-size: 25px;
+    font-size: 20px;
     position: relative;
     top: 0.1rem;
     font-weight: bold;
@@ -186,7 +187,10 @@ section main {
 }
 
 .main-title h1 {
+    position: relative;
+    top: 0.3rem;
     color: #fff;
+    padding-bottom: 0.5rem;
     margin-left: 3rem;
     text-transform: uppercase;
 }
@@ -253,10 +257,13 @@ main .col-md-4 a {
 }
 
 .aside-title h3 {
+    position: relative;
+    top: 0.3rem;
     margin-left: 3rem;
     color: #fff;
     text-transform: uppercase;
     font-weight: bold;
+    font-size: 20px;
 }
 
 .aside-second-section {
@@ -294,9 +301,12 @@ main .col-md-4 a {
 
 .aside-second-title h3 {
     margin-left: 3rem;
+    position: relative;
+    top: 0.3rem;
     color: #fff;
     text-transform: uppercase;
     font-weight: bold;
+    font-size: 20px;
 
 }
 
