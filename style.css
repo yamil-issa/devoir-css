@@ -3,7 +3,6 @@
 }
 
 .container {
-    width: 100%;
     font-family: 'Mulish', sans-serif;
     
 }
@@ -13,6 +12,11 @@
 }
 .container a {
     text-decoration: none;
+}
+
+.row {
+    margin-left: 0.025rem;
+    margin-right: 0.025rem;
 }
 
 header {
@@ -44,10 +48,8 @@ header img {
 
 #recherche_conteneur {
     width: 30%;
-    margin-right: 0.5rem;
     flex: 0 0 auto;
     overflow: hidden;
-    
    
 }
 #recherche_conteneur>form {
